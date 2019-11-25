@@ -14,11 +14,12 @@ module.exports = (conn, ProjectSchema) => {
             id: { $first: '$_id' },
             slug: { $first: '$slug' },
             name: { $first: '$title' },
+            locale: { $first: '$locale' },
             latestVersion: { $first: '$version' },
             versions: { $push: '$version' },
           },
         },
-        { $sort: { _id: 1 } },
+        { $sort: { name: 1 } },
       ])
         .then(docs => docs.map(({ id, ...doc }) => ({ ...doc, _id: id })));
   };

@@ -4,15 +4,7 @@ exports[`Project should be able to query projects latest version of each project
 Array [
   Object {
     "latestVersion": "2.0.0",
-    "name": "Cifrado César",
-    "slug": "cipher-1",
-    "versions": Array [
-      "2.0.0",
-      "1.0.0",
-    ],
-  },
-  Object {
-    "latestVersion": "2.0.0",
+    "locale": "es-ES",
     "name": "Cifrado César",
     "slug": "cipher-2",
     "versions": Array [
@@ -22,9 +14,20 @@ Array [
   },
   Object {
     "latestVersion": "1.0.0",
+    "locale": "es-ES",
     "name": "Cifrado César",
     "slug": "cipher-3",
     "versions": Array [
+      "1.0.0",
+    ],
+  },
+  Object {
+    "latestVersion": "2.0.0",
+    "locale": "es-ES",
+    "name": "Cifrado César",
+    "slug": "cipher-1",
+    "versions": Array [
+      "2.0.0",
       "1.0.0",
     ],
   },
