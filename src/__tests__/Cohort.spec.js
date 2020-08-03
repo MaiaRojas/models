@@ -64,6 +64,7 @@ describe('Cohort', () => {
           createdAt,
           end,
           updatedAt,
+          slug,
           ...obj
         } = result.toJSON();
         expect(obj).toMatchSnapshot();
