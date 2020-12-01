@@ -41,6 +41,20 @@ module.exports = (conn) => {
       default: false,
       required: true,
     },
+    valueProposition: {
+      type: String,
+      enum: [
+        'ADOPTING_A_DIGITAL_MINDSET',
+        'ACCELERATION',
+        'LEARNING_BY_DOING',
+        'DIGITAL_LEADERSHIP',
+        'TAILORED',
+        'LABORATORIA',
+        'FREE_COURSES',
+        'BITE-SIZED_COURSES',
+        'SMEs',
+      ],
+    },
   });
 
   TopicSchema.index({ slug: 1, version: 1 }, { unique: true });
