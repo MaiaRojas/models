@@ -12,5 +12,6 @@ Object {
   "slug": "lim-2017-09-bc-core-am",
   "state": "inProgress",
   "track": "core",
+  "type": "INTERNAL",
 }
 `;

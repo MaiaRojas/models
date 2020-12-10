@@ -53,6 +53,12 @@ module.exports = (conn) => {
       default: false,
       required: true,
     },
+    type: {
+      type: String,
+      default: 'INTERNAL',
+      enum: ['B2B', 'B2C', 'PYMES', 'INTERNAL'],
+      required: true,
+    },
   }, {
     timestamps: { createdAt: true, updatedAt: true },
   });
