@@ -24,6 +24,10 @@ exports.program = {
   type: String,
   required: true,
   enum: [
+    'application',
+    'preAdmission',
+    'bootcamp',
+    'jobPlacement',
     'pre', // Admission
     'bc', // Bootcamp
     'jp', // Job Placement
