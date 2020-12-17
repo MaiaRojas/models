@@ -14,6 +14,7 @@ module.exports = (conn) => {
     // It is only need to consider when migrating old data
     track: {
       type: String,
+      uppercase: true,
     },
     fullName: {
       type: String,
