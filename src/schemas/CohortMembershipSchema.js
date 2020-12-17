@@ -45,5 +45,7 @@ module.exports = (conn) => {
     },
   }, { collection: 'cohort_memberships', timestamps: true });
 
+  CohortMembershipSchema.index({ user: 1, cohort: 1 }, { unique: true });
+
   return CohortMembershipSchema;
 };
